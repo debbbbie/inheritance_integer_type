@@ -35,7 +35,7 @@ module InheritanceIntegerType
           _inheritance_mapping.merge!(mapping)
         end
 
-        alias_method_chain :sti_name, :integer_types
+        alias_method :sti_name, :integer_types
       end
     end
 
